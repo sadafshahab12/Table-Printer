@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Printer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Table Printer</h1>
+      <div id="table-num">
+        <label for="tableNum">Which Table do you want to print?</label>
+        <input type="number" name="tableNum" id="tableNum" />
+      </div>
+      <div id="start">
+        <label for="start-from">Start From:</label>
+        <input type="number" name="start-from" id="start-from" />
+      </div>
+      <div id="end">
+        <label for="end-to">End to:</label>
+        <input type="number" name="end-to" id="end-to" />
+      </div>
+      <div class="btns">
+        <button type="button" id="print" class="btn" onclick="printTable()">
+          Print Table
+        </button>
+        <button type="button" id="reset" class="btn" onclick="reset()">
+          Reset
+        </button>
+      </div>
+    </div>
+    <div id="table"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
